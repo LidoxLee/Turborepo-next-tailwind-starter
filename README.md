@@ -1,13 +1,21 @@
-# Turborepo starter
+# Turborepo next.js tailwind starter
 
-This is an official starter Turborepo.
+This is a simple example for starter.
 
 ## Using this example
 
 Run the following command:
 
+1. git clone this repo.
+
 ```sh
-npx create-turbo@latest
+git clone https://github.com/LidoxLee/Turborepo-next-tailwind-starter.git
+```
+
+2. install
+
+```sh
+npm install
 ```
 
 ## What's inside?
@@ -17,12 +25,12 @@ This Turborepo includes the following packages/apps:
 ### Apps and Packages
 
 - `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
+- `my-app`: another [Next.js](https://nextjs.org/) app
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+- `tailwind-config`: `tailwind` configurations (includes `tailwind.config.ts`)
+  Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
@@ -37,8 +45,7 @@ This Turborepo has some additional tools already setup for you:
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
-pnpm build
+npm run build
 ```
 
 ### Develop
@@ -46,8 +53,7 @@ pnpm build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
-pnpm dev
+npm run dev
 ```
 
 ### Remote Caching
